@@ -90,6 +90,10 @@ nav {
     transition: .15s;
 }
 
+#right-side button a {
+    color: black;
+}
+
 #right-side button:hover {
     transform: scale(1.1);
     cursor: pointer;
