@@ -1,12 +1,8 @@
-main {
+#beginning {
     height: 100vh;
     background-image: url('../../images/bg.jpg');
     background-size: cover;
     background-position: start;
-    padding-top: 40px;
-}
-#beginning {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
