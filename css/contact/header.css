@@ -70,6 +70,9 @@ nav {
     font-weight: 500;
     transition: .15s;
 }
+#right-side button a {
+    color: white;
+}
 #right-side button:hover {
     transform: scale(1.1);
     cursor: pointer;
