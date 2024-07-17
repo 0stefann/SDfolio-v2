@@ -156,3 +156,6 @@ input[type=range]::-moz-range-thumb {
         padding-top: 0;
     }
 }
+#location span {
+    text-shadow: none;
+}
