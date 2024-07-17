@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dascalu Stefan"/>
+    <meta name="description" content="Welcome to Stefan's portfolio website. Explore my projects, skills, and experiences in web development, design, and more. Discover how I bring ideas to life with creativity and technical expertise. Connect with me for collaboration opportunities and professional inquiries."/>
+    <meta name="keywords" content="web development, portfolio, Stefan, Dascalu, web design, projects, skills, experiences, creative developer, professional web developer, frontend developer, backend developer, full stack developer, UX/UI design, coding, software development, tech portfolio, collaboration, professional inquiries" />
+
+    <script src="https://kit.fontawesome.com/c2b1ffa878.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon" sizes="144x144" href="https://developer.mozilla.org/static/img/favicon144.png" />
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon" sizes="114x114" href="https://developer.mozilla.org/static/img/favicon114.png" />
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon" sizes="72x72" href="https://developer.mozilla.org/static/img/favicon72.png" />
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon" href="https://developer.mozilla.org/static/img/favicon57.png" />
+    <!-- basic favicon -->
+    <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png" />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/contact/header.css">
+    <link rel="stylesheet" href="css/contact/contact.css">
+    <link rel="stylesheet" href="css/general.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div id="left-side">
+                <a href="index.html"><i class="fa-solid fa-mountain"></i></a>
+            </div>
+            <div id="middle-side">
+                <a href="index.html"><button><i class="fa-solid fa-house"></i>&nbsp;Home</button></a>
+                <a href="portfolio.html"><button><i class="fa-solid fa-book"></i> &nbsp;Portfolio</button></a>
+                <a href="index.html"><button><i class="fa-solid fa-palette"></i> &nbsp;Design</button></a>
+            </div>
+            <div id="right-side">
+                <a href="contact.html"><button>Contact</button></a>
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div id="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">Design</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="form-container">
+            <h1>Contact Me!</h1>
+            <form>
+                <div id="name-container">
+                    <fieldset id="first">
+                        <legend>
+                            <label for="fname">First Name</label>
+                        </legend>
+                        <input type="text" name="firstName" id="fname" required>
+                        </fieldset>
+                    <fieldset id="second">
+                        <legend>
+                            <label for="lname">Last Name</label>
+                        </legend>
+                        <input type="text" name="lastName" id="lname" required>
+                        </fieldset>
+                </div>
+                <fieldset>
+                    <legend>
+                        <label for="email">Email</label>
+                    </legend>
+                    <input type="text" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="title">Title</label>
+                    </legend>
+                    <input type="text" name="titlu" id="title" required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="message">Message</label>
+                    </legend>
+                    <textarea name="mesaj" id="message" required></textarea>
+                </fieldset>
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </section>
+        <section class="contact-container">
+            <article data-text="stef192007@gmail.com" onclick="copyText(this)">
+                <button>
+                    Mail
+                    <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                </button>
+                <span class="copied-text"></span>
+            </article>
+            <article data-text=".stefann_" onclick="copyText(this)">
+                <button>
+                    Discord
+                    <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                </button>
+            </article>
+            <a href="https://www.instagram.com/stefann79_/" target="_blank" style="text-decoration: none;">
+              <article data-text="stefann79">
+                  <button>
+                      Instagram
+                      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                  </button>
+              </article>
+            </a>
+            <article data-text="0752.453.328" onclick="copyText(this)">
+                <button>
+                    Telefon
+                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                </button>
+            </article>
+        </section>  
+    </main>
+    
+    <footer>
+
+    </footer>
+
+    <script>
+        function copyText(articleElement) {
+          var textToCopy = articleElement.getAttribute('data-text');
+          var textarea = document.createElement("textarea");
+          textarea.value = textToCopy;
+          document.body.appendChild(textarea);
+          textarea.select();
+          textarea.setSelectionRange(0, 99999);
+          document.execCommand("copy");
+          document.body.removeChild(textarea);
+          var span = document.createElement("span");
+          span.innerText = "The text was copied.";
+          span.className = "copied-text";
+          articleElement.appendChild(span);
+          setTimeout(function () {
+              articleElement.removeChild(span);
+          }, 3000);
+        }
+        const hamburger = document.getElementById('hamburger');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        hamburger.addEventListener('click', function() {
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!dropdownMenu.contains(event.target) && event.target !== hamburger) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 700) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
